@@ -86,4 +86,5 @@ end
 def play(board)
   turn(board)
   board.collect { |i| i + " " }
+  over?(board)
 end
