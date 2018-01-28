@@ -84,7 +84,8 @@ end
 end
 
 def play(board)
-  turn(board).collect do |player|
+  turn(board)
+  board.collect do |player|
     if won?(board)
       winner(board)
     elsif draw?(board)
