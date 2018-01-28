@@ -87,13 +87,7 @@ def play(board)
   count = 0
   while count < 9
     turn(board)
-    if !over?(board)
-      return
-    elsif won?(board)
-      winner(board)
-    else draw?(board)
-      print "Cat's Game!"
-    end
+    over?(board)
     count += 1
   end
 end
