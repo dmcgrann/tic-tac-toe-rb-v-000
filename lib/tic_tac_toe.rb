@@ -85,5 +85,7 @@ end
 
 def play(board)
   turn(board)
-  over?(board).detect {|i| i == " "}
+  board.select do |input|
+    over?(board)
+  end
 end
