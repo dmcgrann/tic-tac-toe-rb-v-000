@@ -85,8 +85,5 @@ end
 
 def play(board)
   turn(board)
-  if over?(board).detect { true }
-    return won?(board)
-  else
-  end
+  return display_board(board)
 end
