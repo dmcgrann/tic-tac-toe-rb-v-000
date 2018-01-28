@@ -89,4 +89,3 @@ def play(board)
     !over(board)
   end
 end
-end
