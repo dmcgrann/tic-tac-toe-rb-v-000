@@ -85,5 +85,5 @@ end
 
 def play(board)
   turn(board)
-  over?(board).any? { true }
+  over?(board).detect { true }
 end
