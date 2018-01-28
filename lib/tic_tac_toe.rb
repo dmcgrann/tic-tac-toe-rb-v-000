@@ -85,5 +85,7 @@ end
 
 def play(board)
   turn(board)
-  board.collect { |i| i <= "9" }
+  if !over(board) && !draw?(board)
+  else over?(board)
+  end
 end
