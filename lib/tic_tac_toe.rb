@@ -84,14 +84,12 @@ end
 end
 
 def play(board)
-  turn(board)
-  board.collect do |player|
-    if won?(board)
-      return winner(board)
-    elsif draw?(board)
-      puts "Cat's Game!"
-    else !over?(board)
-      current_player(board)
-    end
+  current_player(board)
+  if turn(board) && !over?(board)
+    return board
+  elsif turn(board) && won?(board)
+    return winner(board)
+  else draw?(board)
+    puts "Cat's Game!"
   end
 end
