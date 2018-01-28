@@ -84,15 +84,12 @@ end
 end
 
 def play(board)
-  turn(board)
-  board.each do |input|
-    input.each do |player|
-      if !over?(board)
-        puts input
-      elsif won?(board)
-        puts winner
-      else
-      end
-    end
+  if turn(board) && !over(board)
+    play(board)
+  elsif turn(board) && won?(board)
+    winner(board)
+  else turn(board) && draw?(board)
+    puts "Cat's Game!"
   end
 end
+  
