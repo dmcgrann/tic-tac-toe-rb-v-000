@@ -84,5 +84,9 @@ end
 end
 
 def play(board)
+  count = 0
   turn(board)
+  until == over?(board)
+    board += 1
+  end
 end
