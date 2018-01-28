@@ -90,7 +90,5 @@ def play(board)
     over?(board)
     count += 1
   end
-  board.each do |player|
-    won?(board)
-  end
+  current_player(board)
 end
