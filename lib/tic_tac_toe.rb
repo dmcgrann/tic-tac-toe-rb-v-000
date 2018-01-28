@@ -84,7 +84,6 @@ end
 end
 
 def play(board)
-  count = 0
   turn(board)
   if !over?(board)
     current_player(board)
