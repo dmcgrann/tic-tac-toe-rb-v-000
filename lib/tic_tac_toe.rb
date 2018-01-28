@@ -87,5 +87,9 @@ def play(board)
   turn(board)
   board.each do |i|
     !over?(board)
+    if won?(board)
+      return winner(board)
+    else
+    end
   end
 end
