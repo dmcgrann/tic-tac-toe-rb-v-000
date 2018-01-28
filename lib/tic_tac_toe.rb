@@ -84,12 +84,12 @@ end
 end
 
 def play(board)
-  current_player(board)
   turn(board)
   if !over?(board)
-    return
+    return current_player(board)
   elsif won?(board)
     puts winner(board)
   else
   end
+
 end
