@@ -86,9 +86,9 @@ end
 def play(board)
   count = 0
   turn(board)
-  return board
   while count < 9
     over?(board)
+    display_board(board)
     count += 1
   end
 end
