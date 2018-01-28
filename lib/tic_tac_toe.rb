@@ -86,7 +86,7 @@ end
 def play(board)
   turn(board)
   board.each do |user_input|
-    if !over(board)
+    if !over?(board)
       play(board)
     else
     end
