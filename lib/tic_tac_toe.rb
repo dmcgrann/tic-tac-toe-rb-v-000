@@ -84,11 +84,6 @@ end
 end
 
 def play(board)
-  if turn(board) && !over(board)
-    current_player(board)
-  elsif turn(board) && won?(board)
-    winner(board)
-  else turn(board) && draw?(board)
-    puts "Cat's Game!"
-  end
+  turn(board)
+  board.collect { |i| i + 1 }
 end
