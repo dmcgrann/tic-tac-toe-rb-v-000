@@ -85,14 +85,8 @@ end
 end
 
 def play(board)
-  board = [" "," "," "," "," "," "," "," "," "]
   turn(board)
   board.each do |input|
     !over?(board)
-  end
-  if over?(board) && won?(board)
-    return winner
-  else
-    puts "Cat's Game!"
   end
 end
