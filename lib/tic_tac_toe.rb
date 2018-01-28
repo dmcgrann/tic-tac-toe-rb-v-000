@@ -85,5 +85,5 @@ end
 end
 
 def play(board)
-  turn(board).each do |i|
+  turn(board).each do |input|
 end
