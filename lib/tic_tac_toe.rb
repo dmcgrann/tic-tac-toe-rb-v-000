@@ -85,5 +85,5 @@ end
 
 def play(board)
   turn(board)
-  over?(board) == board.any? { |i| i == ""}
+  over?(board).any? { true }
 end
