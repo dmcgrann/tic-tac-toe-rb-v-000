@@ -85,8 +85,11 @@ end
 end
 
 def play(board)
-  turn(board)
-  board.each do |input|
-    over?(board)
+  counter = 0
+  loop do
+    turn(board)
+    if over?(board)
+      break
+    end
   end
 end
