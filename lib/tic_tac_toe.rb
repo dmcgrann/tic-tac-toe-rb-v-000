@@ -91,5 +91,4 @@ def play(board)
     puts winner(board)
   else
   end
-
 end
