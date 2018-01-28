@@ -86,7 +86,7 @@ end
 
 def play(board)
   turn(board)
-  board.each do |input|
+  board.stub do |input|
     over?(board)
   end
 end
