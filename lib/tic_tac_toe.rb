@@ -87,12 +87,12 @@ def play(board)
   count = 0
   turn(board)
   until count == 8
-    if won?(board) && over?(board)
-      winner(board)
-    elsif draw?(board) && over?(board)
-      puts "Cat's Game!"
-    else !over?(board)
-    end
-  count += 1
+    count += 1
+  end
+  if won?(board) && over?(board)
+    winner(board)
+  elsif draw?(board) && over?(board)
+    puts "Cat's Game!"
+  else !over?(board)
   end
 end
