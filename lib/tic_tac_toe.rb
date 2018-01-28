@@ -85,7 +85,7 @@ end
 
 def play(board)
   turn(board)
-  if !over(board)
+  if !over?(board)
     display_board(board)
     turn(board)
   elsif won?(board)
