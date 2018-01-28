@@ -86,6 +86,8 @@ end
 def play(board)
   turn(board)
   board.select do |input|
-    over?(board)
+    if over?(board) || won?(board)
+      return nil
+    else
   end
 end
