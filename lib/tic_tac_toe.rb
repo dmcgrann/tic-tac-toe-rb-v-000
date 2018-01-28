@@ -90,4 +90,6 @@ def play(board)
     over?(board)
     count += 1
   end
+  board.each do |player|
+  end
 end
