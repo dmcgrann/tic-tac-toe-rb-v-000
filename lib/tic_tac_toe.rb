@@ -89,5 +89,4 @@ def play(board)
     over?(board)
   end
   won?(board)
-  end
 end
