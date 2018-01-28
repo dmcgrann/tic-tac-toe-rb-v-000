@@ -84,12 +84,6 @@ end
 end
 
 def play(board)
+  current_player(board)
   turn(board)
-  count = 0
-  while count < 9
-    count += 1
-  end
-  if !over?(board)
-  elsif won?(board)
-  end
 end
