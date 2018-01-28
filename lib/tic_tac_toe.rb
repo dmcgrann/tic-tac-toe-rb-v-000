@@ -82,3 +82,14 @@ def winner(board)
   return nil
 end
 end
+
+def play(board)
+  turn(board).each do |player|
+    if won?(board)
+      winner(board)
+    elsif draw?(board)
+      puts "Cat's Game!"
+    else !over(board)
+    end
+  end
+end
