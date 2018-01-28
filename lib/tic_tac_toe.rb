@@ -88,5 +88,5 @@ def play(board)
   board.collect do |i|
     over?(board)
   end
-  won?(board)
+  return board
 end
