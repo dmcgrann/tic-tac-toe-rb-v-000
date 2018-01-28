@@ -86,9 +86,7 @@ end
 def play(board)
   turn(board)
   board.select do |input|
-    if over?(board) || won?(board)
-      return nil
-    else
+    input.each do |player|
     end
   end
 end
