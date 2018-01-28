@@ -85,5 +85,5 @@ end
 
 def play(board)
   turn(board)
-  board.collect { |i| i + 1 }
+  board.collect { |i| i + " " }
 end
