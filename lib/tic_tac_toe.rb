@@ -90,7 +90,7 @@ def play(board)
       winner(board)
     elsif draw?(board)
       puts "Cat's Game!"
-    else !over(board)
+    else !over?(board)
     end
   end
 end
