@@ -87,9 +87,11 @@ def play(board)
   turn(board)
   board.each do |player|
     if !over?(board)
-      current_player(board)
-    else won?(board)
-      winner(board)
+      return current_player(board)
+    elsif won?(board)
+      puts winner(board)
+    else draw?(board)
+      puts "Cat's Game!"
     end
   end
 end
