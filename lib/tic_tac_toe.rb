@@ -92,6 +92,7 @@ def play(board)
     elsif draw?(board)
       puts "Cat's Game!"
     else over?(board)
-  end
+    end
   count += 1
+  end
 end
