@@ -85,7 +85,7 @@ end
 
 def play(board)
   turn(board)
-  if over?(board).detect { true } 
+  if over?(board).detect { true }
     return won?(board)
   else
   end
