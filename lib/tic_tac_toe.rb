@@ -90,4 +90,5 @@ def play(board)
     over?(board)
     count += 1
   end
+  return board
 end
