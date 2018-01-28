@@ -85,9 +85,11 @@ end
 
 def play(board)
   turn(board)
-  if !over?(board)
-    current_player(board)
-  else won?(board)
-    winner(board)
+  board.each do |player|
+    if !over?(board)
+      current_player(board)
+    else won?(board)
+      winner(board)
+    end
   end
 end
