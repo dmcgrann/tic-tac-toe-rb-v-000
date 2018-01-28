@@ -93,5 +93,4 @@ def play(board)
     else
     end
   end
-  !turn(board)
 end
