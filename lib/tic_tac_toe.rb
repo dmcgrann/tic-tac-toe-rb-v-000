@@ -87,8 +87,6 @@ def play(board)
   turn(board)
   if !over?(board)
     return current_player(board)
-  elsif won?(board)
-    puts winner(board)
   else
   end
 end
