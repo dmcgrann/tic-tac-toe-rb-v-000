@@ -86,8 +86,8 @@ end
 def play(board)
   turn(board)
   board.collect { |i| i <= "9" }
-  if !over?board || !won?(board) || !draw?(board)
+  if over?board || won?(board) || draw?(board)
     return
-  else
+  else !over?(board)
   end
 end
