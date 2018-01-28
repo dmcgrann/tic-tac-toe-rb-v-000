@@ -85,11 +85,5 @@ end
 
 def play(board)
   turn(board)
-  if !over?(board)
-    display_board(board)
-  elsif won?(board)
-    winner(board)
-  else draw?(board)
-    puts "Cat's Game!"
-  end
+  over?(board) == board.any? { |i| i == ""}
 end
