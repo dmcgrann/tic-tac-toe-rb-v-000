@@ -87,7 +87,7 @@ def play(board)
   turn(board)
   board.collect do |player|
     if won?(board)
-      winner(board)
+      return winner(board)
     elsif draw?(board)
       puts "Cat's Game!"
     else !over?(board)
