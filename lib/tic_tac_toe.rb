@@ -85,8 +85,5 @@ end
 
 def play(board)
   turn(board)
-  if !over?(board)
-    return current_player(board)
-  else
-  end
+  over?(board)
 end
