@@ -86,11 +86,6 @@ end
 def play(board)
   turn(board)
   board.collect do |i|
-    if !over?(board)
-      current_player(board)
-    elsif won?(board)
-      winner(board)
-    else
-    end
+    over?(board)
   end
 end
