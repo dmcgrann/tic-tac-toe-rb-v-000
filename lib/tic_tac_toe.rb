@@ -85,5 +85,5 @@ end
 
 def play(board)
   turn(board)
-  return display_board(board)
+  return turn_board(board)
 end
