@@ -85,6 +85,8 @@ end
 end
 
 def play(board)
+  board = [" "," "," "," "," "," "," "," "," "]
+  def display_board(board)
   turn(board)
   board.each do |input|
     !over?(board)
