@@ -84,10 +84,6 @@ end
 end
 
 def play(board)
-  count = 0
   turn(board)
-  until count == over?(board)
-    count += 1
-  end
-  current_player(board)
+  over?(board).none? {|i| i == " "}
 end
