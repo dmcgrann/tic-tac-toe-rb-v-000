@@ -85,6 +85,8 @@ end
 
 def play(board)
   turn(board)
-  won?(board)
-  return winner(board)
+  count = 0
+  while < 9
+    count += 1
+  end
 end
