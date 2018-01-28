@@ -89,4 +89,6 @@ def play(board)
   board.each do |input|
     !over?(board)
   end
+  if won?(board) == true
+    puts "congratulations"
 end
