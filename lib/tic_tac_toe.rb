@@ -90,6 +90,5 @@ def play(board)
     !over?(board)
     count += 1
   end
-  draw?(board)
-  puts "Cat's Game!"
+  display_board(board)
 end
