@@ -90,4 +90,10 @@ def play(board)
     over?(board)
     count += 1
   end
+  if won?(board)
+    winner(board)
+  elsif draw?(board)
+    puts "Cat's Game!"
+  else
+  end
 end
