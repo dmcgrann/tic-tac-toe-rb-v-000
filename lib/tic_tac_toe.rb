@@ -85,10 +85,5 @@ end
 end
 
 def play(board)
-  count = 0
-  turn(board)
-  while count < 9
-    !over?(board)
-    count += 1
-  end
+  turn(board).each do |i|
 end
