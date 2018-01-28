@@ -85,7 +85,5 @@ end
 
 def play(board)
   turn(board)
-  if !over?(board) && !draw?(board)
-  else over?(board)
-  end
+  !over?(board) 
 end
